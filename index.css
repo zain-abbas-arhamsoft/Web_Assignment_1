@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .nav-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.stick-to-left{
+}
