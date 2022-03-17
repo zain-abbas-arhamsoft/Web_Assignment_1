@@ -1,9 +1,142 @@
-@media (max-width: 768px) {
+body {
+  font-family: Lato, "Noto Sans", sans-serif !important;
+  color: #444 !important;
+}
+/* .course_summary h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.course_summary a {
+  font-size: 14px;
+  font-weight: 400;
+} */
+
+body {
+  overflow-x: hidden;
+}
+sidebar {
+  --offset: var(--space);
+  /* ... */
+  position: sticky;
+  top: var(--offset);
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.content_box {
+  background-color: #ffffff !important;
+  padding: 16px 24px 24px 16px;
+  border-radius: 4px !important;
+  border: solid 1px rgba(33, 36, 44, 0.16) !important;
+  margin-bottom: 16px !important;
+}
+
+.content_box img {
+  /* background-size: conver; */
+  border-radius: 16px;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.content_box_heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.content_box_heading:hover {
+  color: inherit;
+}
+
+.content_box_links div {
+  flex: 1;
+}
+
+.content_box_links a {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: inherit;
+}
+
+#footer{
+
+}
+
+footer {
+  background-color: #0a2a66 !important;
+  color: #8295BA !important;
+  padding: 12px 20px !important;
+}
+
+.footer_main{
+  padding: 0 20px !important;
+  margin: 0 auto !important;
+}
+
+.footer_content{
+  padding: 36px 0 20px !important;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+/* @media (max-width: 768px) {
   .nav-space-between {
     display: flex;
     justify-content: space-between;
   }
+} */
+
+/* index2.html */
+/* .sidebar {
+  display: none;
 }
 
-.stick-to-left{
-}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+} */
