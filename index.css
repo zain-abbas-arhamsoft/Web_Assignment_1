@@ -83,26 +83,126 @@ sidebar {
   color: inherit;
 }
 
-#footer{
-
+#footer {
+  -webkit-font-smoothing: antialiased !important;
 }
 
 footer {
-  background-color: #0a2a66 !important;
-  color: #8295BA !important;
-  padding: 12px 20px !important;
+  background-color: #0a2a66;
+  color: #8295ba;
+  padding: 12px 20px;
 }
 
-.footer_main{
-  padding: 0 20px !important;
-  margin: 0 auto !important;
+.footer_main {
+  padding: 0;
+  margin: 0 auto;
 }
 
-.footer_content{
-  padding: 36px 0 20px !important;
+.footer_content {
+  padding: 36px 60px 0 0;
 }
 
-@media (min-width: 768px) {
+.footer_mission_p {
+  /* font-size: 20px; */
+  margin: 0px;
+  line-height: 30px;
+  padding-bottom: 8px;
+}
+
+.footer_mission_a,
+.footer_links_heading_a,
+.footer_links_list_a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer_mission_a:hover,
+.footer_links_list_a:hover,
+.btn:hover,
+.footer_bottom_link,
+.footer_bottom_link:hover {
+  color: #ffffff;
+}
+
+.footer_links_ul {
+  font-size: 10px;
+  line-height: 14px;
+  flex-grow: 1;
+  column-count: 3;
+}
+
+.footer_links_ul_li {
+  break-inside: avoid-column !important;
+  padding-bottom: 32px;
+}
+
+.footer_links_heading {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.footer_links_list,
+.footer_links_heading {
+  padding-right: 8px;
+  padding-bottom: 8px;
+  min-height: 32px;
+}
+
+.dropdown button {
+  font-size: 10px;
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  border: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 12px;
+  transition: none !important;
+}
+
+.btn:hover {
+  border: none !important;
+}
+
+.country {
+  padding-top: 10px;
+}
+
+.country_name {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.country_flag {
+  width: 13px;
+  height: 12px;
+  margin: 1px 6px 0 0;
+}
+
+.footer_bottom {
+  border-top: 1px solid #dddddd;
+  padding: 8px 0;
+  font-size: 10px;
+}
+
+.footer_bottom_contents:not(:first-child) {
+  margin-left: 16px;
+}
+
+.footer_bottom_socials {
+}
+
+.footer_bottom_social {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
   }
@@ -114,6 +214,17 @@ footer {
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-links {
+    box-direction: normal !important;
+    -webkit-box-direction: normal !important;
+  }
+
+  .footer_links_ul {
+    column-count: 2 !important;
   }
 }
 
