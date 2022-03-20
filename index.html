@@ -2,845 +2,1266 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignment 1</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
 
-  <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    /> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
-    <div class="bg-light border-right vh-100 sidebar" id="sidebar-wrapper">
-      <div class="sidebar-heading">Course Summary</div>
-      <div class="list-group list-group-flush overflow-auto h-100">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 1</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 2</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 3</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 4</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 5</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 6</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 7</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 8</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 9</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 10</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 11</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 12</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 13</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 14</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 1</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 2</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 3</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 4</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 5</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 6</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 7</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 8</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 9</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 10</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 11</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 12</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 13</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Menu 14</a>
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <!--   Setting navbar disappear while scrolling down . I hav added p-o fixed-top                                          -->
+    <nav class="navbar navbar-expand-sm main_nav align-content-center">
+        <div class="navbar-collapse collapse w-100 order-1 order-sm-0 dual-collapse2">
+
+            <li class="nav-item dropdown list-unstyled" style="position:static;">
+                <a class="nav-link dropdown-toggle main_nav_link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-disabled="true" aria-haspopup="true" aria-expanded="false">
+                    Courses
+                </a>
+                <!--dropdown items of menu-->
+                <div class="dropdown-menu courses_menu w-100">
+                    <div class="d-flex flex-row">
+                        <!-- Column 1-->
+                        <div class="column col-sm-3">
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    Math: Pre-K - 8th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Up to 2nd grade (Khan Kids)
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    2nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3rd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    8th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    See all Math
+                                </a>
+                            </div>
+
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    MATH: GET READY COURSES
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 3rd grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 4th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 5th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 6th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 7th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for 8th grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for Algebra 1
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for Geometry
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for Algebra 2
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for Precalculus
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for AP® Calculus
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Get ready for AP® Statistics
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--Column 2-->
+                        <div class="column col-sm-3">
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    MATH: HIGH SCHOOL & COLLEGE
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Algebra 1
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Geometry
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Algebra 2
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Trigonometry
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Precalculus
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Algebra 1
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Geometry
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Algebra 2
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Trigonometry
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Precalculus
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Precalculus
+                                </a>
+                            </div>
+
+                            <!--Column 4-->
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    TEST PREP
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--Column 3-->
+                        <div class="column col-sm-3">
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    SCIENCE
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                            </div>
+                            
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    COMPUTING
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                            </div>
+
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    ART & HUMANITIES
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                            </div>
+                        </div>   
+                        
+                        <!--Column 4-->
+                        <div class="column col-sm-3">
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    ECONOMICS
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                            </div>
+
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    READING & LANGUAGE ARTS
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                            </div>
+
+                            <div class="courses_menu_names pt-3">
+                                <a class="dropdown-item" href="#">
+                                    LIFE SKILLS
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    3nd Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    4th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    5th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    6th Grade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    7th Grade
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="input-group w-75 align-content-center search_box">
+                            <input class="form-control search_box" type="search" value="search">
+                            <span class="input-group-append">
+                              <button class="btn" type="button">
+                                <svg role="img" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 10 10">
+                                    <path fill="currentColor" d="M7.73732912,6.67985439 C7.75204857,6.69246326 7.76639529,
+                                    6.70573509 7.7803301,6.7196699 L9.65165045,8.59099025 C9.94454365,
+                                    8.8838835 9.94454365,9.3587572 9.65165045,9.65165045 C9.3587572,
+                                    9.94454365 8.8838835,9.94454365 8.59099025,9.65165045 L6.7196699,
+                                    7.7803301 C6.70573509,7.76639529 6.69246326,7.75204857 6.67985439,
+                                    7.73732912 C5.99121283,8.21804812 5.15353311,8.5 4.25,8.5 C1.90278981,
+                                    8.5 0,6.59721019 0,4.25 C0,1.90278981 1.90278981,0 4.25,0 C6.59721019,
+                                    0 8.5,1.90278981 8.5,4.25 C8.5,5.15353311 8.21804812,5.99121283
+                                    7.73732912,6.67985439 L7.73732912,6.67985439 Z M4.25,7.5 C6.04492544,
+                                    7.5 7.5,6.04492544 7.5,4.25 C7.5,2.45507456 6.04492544,1 4.25,1
+                                    C2.45507456,1 1,2.45507456 1,4.25 C1,6.04492544 2.45507456,7.5 4.25,
+                                    7.5 L4.25,7.5 Z"></path></svg>
+                              </button>
+                            </span>
+                      </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="">
+            <a class="navbar-brand mr-auto p-0 pt-2" href="#">
+                <img src="images/khan-academy-logo-EFA43B86E0-seeklogo.com.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="">
+                    <h3 class="navbar-brand main_nav_heading p-0">Khan Academy</h3>
+            </a>
+        </div>
+
+        <button class="navbar-toggler  navbar-light" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon nav_toggler"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container-fluid">
-        <!-- Early Math content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
-            <a class="content_box_heading" href="#">Early math</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Counting</a>
-              <a href="">Addition and subtraction intro</a>
-              <a href="">Place value (tens and hundreds)</a>
-              <a href="">Addition and subtraction within 20</a>
-            </div>
-            <div class="">
-              <a href="">Addition and subtraction within 100</a>
-              <a href="">Addition and subtraction within 1000</a>
-              <a href="">Measurement and data</a>
-              <a href="">Geometry</a>
-            </div>
-          </div>
-        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link main_nav_link" href="#">Donate</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link main_nav_link" href="#">Login</a>
+                </li>
 
-        <!-- Kindergarten content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
-            <a class="content_box_heading" href="#">Kindergarten</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Counting and place value</a>
-              <a href="">Addition and subtraction</a>
-              <a href="">Measurement and geometry</a>
-            </div>
-          </div>
+                <li class="nav-item active">
+                    <a class="nav-link main_nav_link" href="#">Sign up</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- 1st grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
-            <a class="content_box_heading" href="#">1st grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Place value</a>
-              <a href="">Addition and subtraction</a>
-              <a href="">Place value (tens and hundreds)</a>
+    <!-- Sticky navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light sticky_nav">
+        <div class="container-fluid pl-0">
+            <div class="d-flex flex-column pl-0 mt-3 mb-1">
+                <div class="row">
+                    <h6 class="sticky_nav_heading1 mb-0">Math</h6>
+                </div>
+                <div class="row">
+                    <h2 class="sticky_nav_heading2">Math: pre-k - 8th grade</h2>
+                </div>
             </div>
-          </div>
         </div>
-
-        <!-- 2nd grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
-            <a class="content_box_heading" href="#">2nd grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Add and subtract within 20</a>
-              <a href="">Place value</a>
-              <a href="">Add and subtract within 100</a>
-              <a href="">Add and subtract within 1,000</a>
-            </div>
-            <div class="">
-              <a href="">Money and time</a>
-              <a href="">Measurement/a>
-                <a href="">Data</a>
-                <a href="">Geometry</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3rd grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
-            <a class="content_box_heading" href="#">3rd grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Intro to multiplication</a>
-              <a href="">1-digit multiplication</a>
-              <a href="">Addition, subtraction, and estimation</a>
-              <a href="">Intro to division</a>
-              <a href="">Understand fractions</a>
-              <a href="">Equivalent fractions and comparing fractions</a>
-              <a href="">More with multiplication and division</a>
-            </div>
-            <div class="">
-              <a href="">Arithmetic patterns and problem solving</a>
-              <a href="">Quadrilaterals</a>
-              <a href="">Area</a>
-              <a href="">Perimeter</a>
-              <a href="">Time</a>
-              <a href="">Measurement</a>
-              <a href="">Represent and interpret data</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4th grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
-            <a class="content_box_heading" href="#">4th grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Place value</a>
-              <a href="">Addition, subtraction, and estimation</a>
-              <a href="">Multiply by 1-digit numbers</a>
-              <a href="">Multiply by 2-digit numbers</a>
-              <a href="">Division</a>
-              <a href="">Factors, multiples and patterns</a>
-              <a href="">Equivalent fractions and comparing fractions</a>
-            </div>
-            <div class="">
-              <a href="">Add and subtract fractions</a>
-              <a href="">Multiply fractions</a>
-              <a href="">Understand decimals</a>
-              <a href="">Plane figures</a>
-              <a href="">Measuring angles</a>
-              <a href="">Area and perimeter</a>
-              <a href="">Units of measurement</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5th grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
-            <a class="content_box_heading" href="#">5th grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Decimal place value</a>
-              <a href="">Add decimals</a>
-              <a href="">Subtract decimals</a>
-              <a href="">Add and subtract fractions</a>
-              <a href="">Multi-digit multiplication and division</a>
-              <a href="">Multiply fractions</a>
-              <a href="">Divide fractions</a>
-              <a href="">Multiply decimals</a>
-            </div>
-            <div class="">
-              <a href="">Divide decimals</a>
-              <a href="">Powers of ten</a>
-              <a href="">Volume</a>
-              <a href="">Coordinate plane</a>
-              <a href="">Algebraic thinking</a>
-              <a href="">Converting units of measure</a>
-              <a href="">Line plots</a>
-              <a href="">Properties of shapes</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6th grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
-            <a class="content_box_heading" href="#">6th grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Ratios, rates, & percentages</a>
-              <a href="">Arithmetic operations</a>
-              <a href="">Negative numbers</a>
-              <a href="">Properties of numbers</a>
-            </div>
-            <div class="">
-              <a href="">Variables & expressions</a>
-              <a href="">Equations & inequalities introduction</a>
-              <a href="">Geometry</a>
-              <a href="">Data and statistics</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 7th grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_7.png-1ee4f2-128c.png" alt="" />
-            <a class="content_box_heading" href="#">7th grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Negative numbers: addition and subtraction</a>
-              <a href="">Negative numbers: multiplication and division</a>
-              <a href="">Fractions, decimals, & percentages</a>
-            </div>
-            <div class="">
-              <a href="">Rates & proportional relationships</a>
-              <a href="">Expressions, equations, & inequalities</a>
-              <a href="">Geometry</a>
-              <a href="">Statistics and probability</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 8th grade content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
-            <a class="content_box_heading" href="#">8th grade</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Numbers and operations</a>
-              <a href="">Solving equations with one unknown</a>
-              <a href="">Linear equations and functions</a>
-            </div>
-            <div class="">
-              <a href="">Systems of equations</a>
-              <a href="">Geometry</a>
-              <a href="">Geometric transformations</a>
-              <a href="">Data and modeling</a>
-            </div>
-          </div>
-        </div>
+    </nav>
 
 
-        <!-- 3rd grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
-            <a class="content_box_heading" href="#">3rd grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
+
+    <!-- Sidebar -->
+    <div class="d-flex pt-4">
+        <div class="col-sm-3 d-none d-sm-block">
+            <div class="bg-light vh-100 overflow-auto sidebar">
+                <div>
+                    <h2 class="sidebar_heading">Course Summary</h2>
+                </div>
+                <hr>
+                <div class="list-group list-group-flush h-100 pb-4">
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">Early Math</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">Kindergarten</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">1st Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">2nd Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">3rd Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">4th Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">5th Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">6th Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">7th Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">8th Grade</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">3rd grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">4th grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">5th grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">6th grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">7th grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">8th grade foundations
+                        (Eureka Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">3rd grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">4th grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">5th grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">6th grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">7th grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">8th grade (Eureka
+                        Math/EngageNY)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">6th grade (Illustrative
+                        Mathematics)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">7th grade (Illustrative
+                        Mathematics)</a>
+                    <a href="# " class="list-group-item list-group-item-action bg-light pl-0">8th grade (Illustrative
+                        Mathematics)</a>
+                </div>
             </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-              <a href="">Module 7: Foundations</a>
-            </div>
-          </div>
+
         </div>
 
-        <!-- 4th grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
-            <a class="content_box_heading" href="#">4th grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-              <a href="">Module 7: Foundations</a>
-            </div>
-          </div>
-        </div>
+        <div class="col-sm-9 col-12">
+            <div class="container-fluid">
+                <!-- Early Math content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">Early math</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Counting</a>
+                            <a href="">Addition and subtraction intro</a>
+                            <a href="">Place value (tens and hundreds)</a>
+                            <a href="">Addition and subtraction within 20</a>
+                        </div>
+                        <div class="">
+                            <a href="">Addition and subtraction within 100</a>
+                            <a href="">Addition and subtraction within 1000</a>
+                            <a href="">Measurement and data</a>
+                            <a href="">Geometry</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 5th grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
-            <a class="content_box_heading" href="#">5th grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-            </div>
-          </div>
-        </div>
+                <!-- Kindergarten content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">Kindergarten</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Counting and place value</a>
+                            <a href="">Addition and subtraction</a>
+                            <a href="">Measurement and geometry</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 6th grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
-            <a class="content_box_heading" href="#">6th grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-            </div>
-          </div>
-        </div>
+                <!-- 1st grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">1st grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Place value</a>
+                            <a href="">Addition and subtraction</a>
+                            <a href="">Place value (tens and hundreds)</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 7th grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_7.png-1ee4f2-128c.png" alt="" />
-            <a class="content_box_heading" href="#">7th grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-            </div>
-          </div>
-        </div>
+                <!-- 2nd grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/early_math.png-314b80-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">2nd grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Add and subtract within 20</a>
+                            <a href="">Place value</a>
+                            <a href="">Add and subtract within 100</a>
+                            <a href="">Add and subtract within 1,000</a>
+                        </div>
+                        <div class="">
+                            <a href="">Money and time</a>
+                            <a href="">Measurement/a>
+                                <a href="">Data</a>
+                                <a href="">Geometry</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 8th grade foundations (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
-            <a class="content_box_heading" href="#">8th grade foundations (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Foundations</a>
-              <a href="">Module 2: Foundations</a>
-              <a href="">Module 3: Foundations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Foundations</a>
-              <a href="">Module 5: Foundations</a>
-              <a href="">Module 6: Foundations</a>
-              <a href="">Module 7: Foundations</a>
-            </div>
-          </div>
-        </div>
+                <!-- 3rd grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">3rd grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Intro to multiplication</a>
+                            <a href="">1-digit multiplication</a>
+                            <a href="">Addition, subtraction, and estimation</a>
+                            <a href="">Intro to division</a>
+                            <a href="">Understand fractions</a>
+                            <a href="">Equivalent fractions and comparing fractions</a>
+                            <a href="">More with multiplication and division</a>
+                        </div>
+                        <div class="">
+                            <a href="">Arithmetic patterns and problem solving</a>
+                            <a href="">Quadrilaterals</a>
+                            <a href="">Area</a>
+                            <a href="">Perimeter</a>
+                            <a href="">Time</a>
+                            <a href="">Measurement</a>
+                            <a href="">Represent and interpret data</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 3rd grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
-            <a class="content_box_heading" href="#">3rd grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Properties of multiplication and division and solving problems with units of 2–5 and
-                10</a>
-              <a href="">Module 2: Place value and problem solving with units of measure </a>
-              <a href="">Module 3: Multiplication and division with units of 0, 1, 6–9, and multiples of 10</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Multiplication and area</a>
-              <a href="">Module 5: Fractions as numbers on the number line</a>
-              <a href="">Module 6: Collecting and displaying data</a>
-              <a href="">Module 7: Geometry and measurement word problems</a>
-            </div>
-          </div>
-        </div>
+                <!-- 4th grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">4th grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Place value</a>
+                            <a href="">Addition, subtraction, and estimation</a>
+                            <a href="">Multiply by 1-digit numbers</a>
+                            <a href="">Multiply by 2-digit numbers</a>
+                            <a href="">Division</a>
+                            <a href="">Factors, multiples and patterns</a>
+                            <a href="">Equivalent fractions and comparing fractions</a>
+                        </div>
+                        <div class="">
+                            <a href="">Add and subtract fractions</a>
+                            <a href="">Multiply fractions</a>
+                            <a href="">Understand decimals</a>
+                            <a href="">Plane figures</a>
+                            <a href="">Measuring angles</a>
+                            <a href="">Area and perimeter</a>
+                            <a href="">Units of measurement</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 4th grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
-            <a class="content_box_heading" href="#">4th grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Place value, rounding, and algorithms for addition and subtraction</a>
-              <a href="">Module 2: Unit conversions and problem solving with metric measurement</a>
-              <a href="">Module 3: Multi-digit multiplication and division</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Angle measure and plane figures</a>
-              <a href="">Module 5: Fraction equivalence, ordering, and operations</a>
-              <a href="">Module 6: Decimal fractions</a>
-              <a href="">Module 7: Exploring measurement with multiplication</a>
-            </div>
-          </div>
-        </div>
+                <!-- 5th grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">5th grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Decimal place value</a>
+                            <a href="">Add decimals</a>
+                            <a href="">Subtract decimals</a>
+                            <a href="">Add and subtract fractions</a>
+                            <a href="">Multi-digit multiplication and division</a>
+                            <a href="">Multiply fractions</a>
+                            <a href="">Divide fractions</a>
+                            <a href="">Multiply decimals</a>
+                        </div>
+                        <div class="">
+                            <a href="">Divide decimals</a>
+                            <a href="">Powers of ten</a>
+                            <a href="">Volume</a>
+                            <a href="">Coordinate plane</a>
+                            <a href="">Algebraic thinking</a>
+                            <a href="">Converting units of measure</a>
+                            <a href="">Line plots</a>
+                            <a href="">Properties of shapes</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 5th grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
-            <a class="content_box_heading" href="#">5th grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Place value and decimal fractions</a>
-              <a href="">Module 2: Unit conversions and problem solving with metric measurement</a>
-              <a href="">Module 3: Multi-digit whole number and decimal fraction operations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Multiplication and division of fractions and decimal fractions</a>
-              <a href="">Module 5: Addition and multiplication with volume and area</a>
-              <a href="">Module 6: Problem solving with the coordinate plane</a>
-            </div>
-          </div>
-        </div>
+                <!-- 6th grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">6th grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Ratios, rates, & percentages</a>
+                            <a href="">Arithmetic operations</a>
+                            <a href="">Negative numbers</a>
+                            <a href="">Properties of numbers</a>
+                        </div>
+                        <div class="">
+                            <a href="">Variables & expressions</a>
+                            <a href="">Equations & inequalities introduction</a>
+                            <a href="">Geometry</a>
+                            <a href="">Data and statistics</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 6th grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
-            <a class="content_box_heading" href="#">6th grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Ratios and unit rates</a>
-              <a href="">Module 2: Arithmetic operations including dividing by a fraction</a>
-              <a href="">Module 3: Rational numbers</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Expressions and equations</a>
-              <a href="">Module 5: Area, surface area, and volume problems</a>
-              <a href="">Module 6: Statistics</a>
-            </div>
-          </div>
-        </div>
+                <!-- 7th grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_7.png-1ee4f2-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">7th grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Negative numbers: addition and subtraction</a>
+                            <a href="">Negative numbers: multiplication and division</a>
+                            <a href="">Fractions, decimals, & percentages</a>
+                        </div>
+                        <div class="">
+                            <a href="">Rates & proportional relationships</a>
+                            <a href="">Expressions, equations, & inequalities</a>
+                            <a href="">Geometry</a>
+                            <a href="">Statistics and probability</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 7th grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_7.png-18a797-128c.png" alt="" />
-            <a class="content_box_heading" href="#">7th grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Ratios and proportional relationships</a>
-              <a href="">Module 2: Rational numbers</a>
-              <a href="">Module 3: Expressions and equations</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Percent and proportional relationships</a>
-              <a href="">Module 5: Statistics and probability</a>
-              <a href="">Module 6: Geometry</a>
-            </div>
-          </div>
-        </div>
+                <!-- 8th grade content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">8th grade</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Numbers and operations</a>
+                            <a href="">Solving equations with one unknown</a>
+                            <a href="">Linear equations and functions</a>
+                        </div>
+                        <div class="">
+                            <a href="">Systems of equations</a>
+                            <a href="">Geometry</a>
+                            <a href="">Geometric transformations</a>
+                            <a href="">Data and modeling</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 8th grade (Eureka Math/EngageNY) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
-            <a class="content_box_heading" href="#">8th grade (Eureka Math/EngageNY)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Module 1: Integer exponents and scientific notation</a>
-              <a href="">Module 2: The concept of congruence</a>
-              <a href="">Module 3: Similarity</a>
-            </div>
-            <div class="">
-              <a href="">Module 4: Linear equations</a>
-              <a href="">Module 5: Examples of functions from geometry</a>
-              <a href="">Module 6: Linear functions</a>
-              <a href="">Module 6: Introduction to irrational numbers using geometry</a>
-            </div>
-          </div>
-        </div>
 
-        <!-- 6th grade (Illustrative Mathematics) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
-            <a class="content_box_heading" href="#">6th grade (Illustrative Mathematics)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Unit 1: Area and surface area</a>
-              <a href="">Unit 2: Introducing ratios</a>
-              <a href="">Unit 3: Unit rates and percentages</a>
-              <a href="">Unit 4: Dividing fractions</a>
-            </div>
-            <div class="">
-              <a href="">Unit 5: Arithmetic in base ten</a>
-              <a href="">Unit 6: Expressions and equations</a>
-              <a href="">Unit 7: Rational numbers</a>
-              <a href="">Unit 8: Data sets and distribution</a>
-            </div>
-          </div>
-        </div>
+                <!-- 3rd grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">3rd grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                            <a href="">Module 7: Foundations</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 7th grade (Illustrative Mathematics) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
-            <a class="content_box_heading" href="#">7th grade (Illustrative Mathematics)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Unit 1: Scale drawings</a>
-              <a href="">Unit 2: Introducing proportional relationships</a>
-              <a href="">Unit 3: Measuring circles</a>
-              <a href="">Unit 4: Proportional relationships and percentages</a>
-            </div>
-            <div class="">
-              <a href="">Unit 5: Rational number arithmetic</a>
-              <a href="">Unit 6: Expressions and equations</a>
-              <a href="">Unit 7: Angles, triangles, and prisms</a>
-              <a href="">Unit 8: Expressions, equations, and inequalities</a>
-            </div>
-          </div>
-        </div>
+                <!-- 4th grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">4th grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                            <a href="">Module 7: Foundations</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 8th grade (Illustrative Mathematics) content -->
-        <div class="content_box">
-          <div class="">
-            <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
-            <a class="content_box_heading" href="#">8th grade (Illustrative Mathematics)</a>
-          </div>
-          <hr />
-          <div class="d-flex content_box_links">
-            <div class="">
-              <a href="">Unit 1: Rigid transformations and congruence</a>
-              <a href="">Unit 2: Dilations, similarity, and introducing slope</a>
-              <a href="">Unit 3: Linear relationships</a>
-              <a href="">Unit 4: Linear equations and linear systems</a>
-            </div>
-            <div class="">
-              <a href="">Unit 5: Functions and volume</a>
-              <a href="">Unit 6: Associations in data</a>
-              <a href="">Unit 7: Exponents and scientific notation</a>
-              <a href="">Unit 8: Pythagorean theorem and irrational numbers</a>
-            </div>
-          </div>
-        </div>
+                <!-- 5th grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">5th grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                        </div>
+                    </div>
+                </div>
 
-      </div>
+                <!-- 6th grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">6th grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7th grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_7.png-1ee4f2-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">7th grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8th grade foundations (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">8th grade foundations (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Foundations</a>
+                            <a href="">Module 2: Foundations</a>
+                            <a href="">Module 3: Foundations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Foundations</a>
+                            <a href="">Module 5: Foundations</a>
+                            <a href="">Module 6: Foundations</a>
+                            <a href="">Module 7: Foundations</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_3.png-6fb2af-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">3rd grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Properties of multiplication and division and solving problems with
+                                units of 2–5 and
+                                10</a>
+                            <a href="">Module 2: Place value and problem solving with units of measure </a>
+                            <a href="">Module 3: Multiplication and division with units of 0, 1, 6–9, and multiples of
+                                10</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Multiplication and area</a>
+                            <a href="">Module 5: Fractions as numbers on the number line</a>
+                            <a href="">Module 6: Collecting and displaying data</a>
+                            <a href="">Module 7: Geometry and measurement word problems</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_4.png-c88a8f-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">4th grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Place value, rounding, and algorithms for addition and subtraction</a>
+                            <a href="">Module 2: Unit conversions and problem solving with metric measurement</a>
+                            <a href="">Module 3: Multi-digit multiplication and division</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Angle measure and plane figures</a>
+                            <a href="">Module 5: Fraction equivalence, ordering, and operations</a>
+                            <a href="">Module 6: Decimal fractions</a>
+                            <a href="">Module 7: Exploring measurement with multiplication</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5th grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_5.png-43b287-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">5th grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Place value and decimal fractions</a>
+                            <a href="">Module 2: Unit conversions and problem solving with metric measurement</a>
+                            <a href="">Module 3: Multi-digit whole number and decimal fraction operations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Multiplication and division of fractions and decimal fractions</a>
+                            <a href="">Module 5: Addition and multiplication with volume and area</a>
+                            <a href="">Module 6: Problem solving with the coordinate plane</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6th grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_6.png-18a797-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">6th grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Ratios and unit rates</a>
+                            <a href="">Module 2: Arithmetic operations including dividing by a fraction</a>
+                            <a href="">Module 3: Rational numbers</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Expressions and equations</a>
+                            <a href="">Module 5: Area, surface area, and volume problems</a>
+                            <a href="">Module 6: Statistics</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7th grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_7.png-18a797-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">7th grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Ratios and proportional relationships</a>
+                            <a href="">Module 2: Rational numbers</a>
+                            <a href="">Module 3: Expressions and equations</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Percent and proportional relationships</a>
+                            <a href="">Module 5: Statistics and probability</a>
+                            <a href="">Module 6: Geometry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8th grade (Eureka Math/EngageNY) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/grade_8.png-ab8c7d-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">8th grade (Eureka Math/EngageNY)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Module 1: Integer exponents and scientific notation</a>
+                            <a href="">Module 2: The concept of congruence</a>
+                            <a href="">Module 3: Similarity</a>
+                        </div>
+                        <div class="">
+                            <a href="">Module 4: Linear equations</a>
+                            <a href="">Module 5: Examples of functions from geometry</a>
+                            <a href="">Module 6: Linear functions</a>
+                            <a href="">Module 6: Introduction to irrational numbers using geometry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6th grade (Illustrative Mathematics) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">6th grade (Illustrative Mathematics)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Unit 1: Area and surface area</a>
+                            <a href="">Unit 2: Introducing ratios</a>
+                            <a href="">Unit 3: Unit rates and percentages</a>
+                            <a href="">Unit 4: Dividing fractions</a>
+                        </div>
+                        <div class="">
+                            <a href="">Unit 5: Arithmetic in base ten</a>
+                            <a href="">Unit 6: Expressions and equations</a>
+                            <a href="">Unit 7: Rational numbers</a>
+                            <a href="">Unit 8: Data sets and distribution</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7th grade (Illustrative Mathematics) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">7th grade (Illustrative Mathematics)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Unit 1: Scale drawings</a>
+                            <a href="">Unit 2: Introducing proportional relationships</a>
+                            <a href="">Unit 3: Measuring circles</a>
+                            <a href="">Unit 4: Proportional relationships and percentages</a>
+                        </div>
+                        <div class="">
+                            <a href="">Unit 5: Rational number arithmetic</a>
+                            <a href="">Unit 6: Expressions and equations</a>
+                            <a href="">Unit 7: Angles, triangles, and prisms</a>
+                            <a href="">Unit 8: Expressions, equations, and inequalities</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8th grade (Illustrative Mathematics) content -->
+                <div class="content_box">
+                    <div class="">
+                        <img class="img-fluid" src="/images/arithmetic.png-af7472-128c.png" alt="" />
+                        <a class="content_box_heading" href="#">8th grade (Illustrative Mathematics)</a>
+                    </div>
+                    <hr />
+                    <div class="d-flex content_box_links">
+                        <div class="">
+                            <a href="">Unit 1: Rigid transformations and congruence</a>
+                            <a href="">Unit 2: Dilations, similarity, and introducing slope</a>
+                            <a href="">Unit 3: Linear relationships</a>
+                            <a href="">Unit 4: Linear equations and linear systems</a>
+                        </div>
+                        <div class="">
+                            <a href="">Unit 5: Functions and volume</a>
+                            <a href="">Unit 6: Associations in data</a>
+                            <a href="">Unit 7: Exponents and scientific notation</a>
+                            <a href="">Unit 8: Pythagorean theorem and irrational numbers</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <!-- /#page-content-wrapper -->
-  </div>
 
-  <div id="footer">
-    <footer class="">
-      <div class="footer_main">
-        <div class="footer_content">
-          <div class="d-flex flex-column text-center text-sm-left flex-sm-row">
-            <div class="col-sm-5 footer_mission mb-4">
-              <p class="footer_mission_p pl-5 pr-5">Our mission is to provide a free, world-class education to anyone, anywhere.
-              </p>
-              <p class="footer_mission_p pl-5 pr-5">Khan Academy is a 501(c)(3) nonprofit organization. <a href="#"
-                  class="footer_mission_a">Donate</a> today! or <a href="#" class="footer_mission_a">volunteer</a> today!</p>
-            </div>
-            <div class="col-sm-7 p-0 m-0 footer_links text-left">
-              <div>
-                <ul class="d-flex list-unstyled footer_links_ul">
-                  <li class="col-sm-4 flex-column footer_links_ul_li pr-0 pl-0">
-                    <h3 class="footer_links_heading"><a href=""
-                        class="font-weight-bold footer_links_heading_a">About</a></h3>
-                    <ul class="list-unstyled">
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">News</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Impact</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our team</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our interns</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our content specialists</a>
-                      </li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our leadership</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our supporters</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our contributors</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our finances</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Careers</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Internships</a></li>
-                    </ul>
-                  </li>
 
-                  <div class="col-sm-4">
-                    <li class="flex-row footer_links_ul_li">
-                      <h3 class="font-weight-bold footer_links_heading">Contact</h3>
-                      <ul class="list-unstyled">
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">Help center</a></li>
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">Support community</a></li>
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">OSupport community</a>
-                        </li>
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">Press</a></li>
-                      </ul>
-                    </li>
 
-                    <li class="flex-row footer_links_ul_li">
-                      <h3 class="font-weight-bold footer_links_heading">Download our apps</h3>
-                      <ul class="list-unstyled">
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">iOS app</a></li>
-                        <li class="footer_links_list"><a href="#" class="footer_links_list_a">Android app</a></li>
-                      </ul>
-                    </li>
-                  </div>
+    <div id="footer">
+        <footer class="">
+            <div class="footer_main">
+                <div class="footer_content">
+                    <div class="d-flex flex-column text-center text-sm-left flex-sm-row">
+                        <div class="col-sm-5 footer_mission mb-4">
+                            <p class="footer_mission_p pl-5 pr-5 pl-sm-0 pr-sm-0">Our mission is to provide a free,
+                                world-class education to anyone, anywhere.
+                            </p>
+                            <p class="footer_mission_p pl-5 pr-5 pl-sm-0 pr-sm-0">Khan Academy is a 501(c)(3) nonprofit
+                                organization. <a href="#" class="footer_mission_a">Donate</a> today! or <a href="#"
+                                    class="footer_mission_a">volunteer</a> today!</p>
+                        </div>
+                        <div class="col-sm-7 p-0 m-0 footer_links text-left">
+                            <div>
+                                <ul class="d-flex list-unstyled footer_links_ul">
+                                    <li class="col-sm-4 flex-column footer_links_ul_li pr-0 pl-0">
+                                        <h3 class="footer_links_heading"><a href=""
+                                                class="font-weight-bold footer_links_heading_a">About</a></h3>
+                                        <ul class="list-unstyled">
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">News</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Impact</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    team</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    interns</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    content specialists</a>
+                                            </li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    leadership</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    supporters</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    contributors</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Our
+                                                    finances</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Careers</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Internships</a></li>
+                                        </ul>
+                                    </li>
 
-                  <li class="col-sm-4 footer_links_ul_li pr-0 pl-0">
-                    <h3 class="font-weight-bold footer_links_heading">Courses</h3>
-                    <ul class="list-unstyled">
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math: Pre-K - 8th grade</a>
-                      </li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math: Get ready courses</a>
-                      </li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math: high school &
-                          college</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Test prep</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Science</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Computing</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Arts & humanities</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Economics</a></li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Reading & language arts</a>
-                      </li>
-                      <li class="footer_links_list"><a href="#" class="footer_links_list_a">Life skills</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="language_country">
-            <div class="d-flex">
-              <div class="pt-2">
-                <h3 class="footer_links_heading">Language</h3>
-              </div>
-              <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  English
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Arabic</a>
-                  <a class="dropdown-item" href="#">Chinese</a>
-                  <a class="dropdown-item" href="#">Dutch</a>
-                  <a class="dropdown-item" href="#">French</a>
-                  <a class="dropdown-item" href="#">Hindi</a>
-                  <a class="dropdown-item" href="#">Italian</a>
-                  <a class="dropdown-item" href="#">Polski</a>
-                  <a class="dropdown-item" href="#">Turkish</a>
-                  <a class="dropdown-item" href="#">Arabic</a>
-                  <a class="dropdown-item" href="#">Chinese</a>
-                  <a class="dropdown-item" href="#">Dutch</a>
-                  <a class="dropdown-item" href="#">French</a>
-                  <a class="dropdown-item" href="#">Hindi</a>
-                  <a class="dropdown-item" href="#">Italian</a>
-                  <a class="dropdown-item" href="#">Polski</a>
-                  <a class="dropdown-item" href="#">Turkish</a>
-                  <a class="dropdown-item" href="#">Arabic</a>
-                  <a class="dropdown-item" href="#">Chinese</a>
-                  <a class="dropdown-item" href="#">Dutch</a>
-                  <a class="dropdown-item" href="#">French</a>
-                  <a class="dropdown-item" href="#">Hindi</a>
-                  <a class="dropdown-item" href="#">Italian</a>
-                  <a class="dropdown-item" href="#">Polski</a>
-                  <a class="dropdown-item" href="#">Turkish</a>
+                                    <div class="col-sm-4">
+                                        <li class="flex-row footer_links_ul_li">
+                                            <h3 class="font-weight-bold footer_links_heading">Contact</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">Help center</a></li>
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">Support community</a></li>
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">OSupport community</a>
+                                                </li>
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">Press</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="flex-row footer_links_ul_li">
+                                            <h3 class="font-weight-bold footer_links_heading">Download our apps</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">iOS app</a></li>
+                                                <li class="footer_links_list"><a href="#"
+                                                        class="footer_links_list_a">Android app</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                    <li class="col-sm-4 footer_links_ul_li pr-0 pl-0">
+                                        <h3 class="font-weight-bold footer_links_heading">Courses</h3>
+                                        <ul class="list-unstyled">
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math:
+                                                    Pre-K - 8th grade</a>
+                                            </li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math:
+                                                    Get ready courses</a>
+                                            </li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Math:
+                                                    high school &
+                                                    college</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Test
+                                                    prep</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Science</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Computing</a></li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Arts &
+                                                    humanities</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Economics</a></li>
+                                            <li class="footer_links_list"><a href="#"
+                                                    class="footer_links_list_a">Reading & language arts</a>
+                                            </li>
+                                            <li class="footer_links_list"><a href="#" class="footer_links_list_a">Life
+                                                    skills</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language_country">
+                        <div class="d-flex">
+                            <div class="pt-2">
+                                <h3 class="footer_links_heading">Language</h3>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    English
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                    <a class="dropdown-item" href="#">Chinese</a>
+                                    <a class="dropdown-item" href="#">Dutch</a>
+                                    <a class="dropdown-item" href="#">French</a>
+                                    <a class="dropdown-item" href="#">Hindi</a>
+                                    <a class="dropdown-item" href="#">Italian</a>
+                                    <a class="dropdown-item" href="#">Polski</a>
+                                    <a class="dropdown-item" href="#">Turkish</a>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                    <a class="dropdown-item" href="#">Chinese</a>
+                                    <a class="dropdown-item" href="#">Dutch</a>
+                                    <a class="dropdown-item" href="#">French</a>
+                                    <a class="dropdown-item" href="#">Hindi</a>
+                                    <a class="dropdown-item" href="#">Italian</a>
+                                    <a class="dropdown-item" href="#">Polski</a>
+                                    <a class="dropdown-item" href="#">Turkish</a>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                    <a class="dropdown-item" href="#">Chinese</a>
+                                    <a class="dropdown-item" href="#">Dutch</a>
+                                    <a class="dropdown-item" href="#">French</a>
+                                    <a class="dropdown-item" href="#">Hindi</a>
+                                    <a class="dropdown-item" href="#">Italian</a>
+                                    <a class="dropdown-item" href="#">Polski</a>
+                                    <a class="dropdown-item" href="#">Turkish</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="d-flex">
+                                <div class="pt-2">
+                                    <h3 class="footer_links_heading">Country</h3>
+                                </div>
+                                <div class="flex-row">
+                                    <a class="country_name" href="#"><img class="country_flag" src="/images/us-flag.png"
+                                            alt="U.S. flag">U.S.</a>
+                                    <a class="country_name" href="#"><img class="country_flag"
+                                            src="/images/india-flag.png" alt="India flag">India</a>
+                                    <a class="country_name" href="#"><img class="country_flag"
+                                            src="/images/mexico-flag.png" alt="Mexico flag">Mexico</a>
+                                    <a class="country_name" href="#"><img class="country_flag"
+                                            src="/images/brazil-flag.png" alt="Brazil flag">Brazil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="country">
-              <div class="d-flex">
-                <div class="pt-2">
-                  <h3 class="footer_links_heading">Country</h3>
-                </div>
-                <div class="flex-row">
-                  <a class="country_name" href="#"><img class="country_flag" src="/images/us-flag.png"
-                      alt="U.S. flag">U.S.</a>
-                  <a class="country_name" href="#"><img class="country_flag" src="/images/india-flag.png"
-                      alt="India flag">India</a>
-                  <a class="country_name" href="#"><img class="country_flag" src="/images/mexico-flag.png"
-                      alt="Mexico flag">Mexico</a>
-                  <a class="country_name" href="#"><img class="country_flag" src="/images/brazil-flag.png"
-                      alt="Brazil flag">Brazil</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row footer_bottom">
-          <div class="d-flex flex-column flex-sm-row col-sm-10 pl-0">
-            <div class="d-flex justify-content-center pb-2 pl-3 footer_bottom_contents">© 2022 Khan Academy</div>
-            <div class="d-flex justify-content-center pb-2 footer_bottom_contents"><a class="footer_bottom_link"
-                href="#">Terms of use</a></div>
-            <div class="d-flex justify-content-center pb-2 footer_bottom_contents"><a class="footer_bottom_link"
-                href="#">Privacy Policy</a></div>
-            <div class="d-flex justify-content-center footer_bottom_contents"><a class="footer_bottom_link"
-                href="#">Cookie Notice</a></div>
-          </div>
-          <div class="d-flex flex-row justify-content-center col-sm-2 pl-0 pr-0">
-            <a class="footer_bottom_social" href="#"><svg role="img" aria-hidden="true" focusable="false" width="24"
-                height="24" viewBox="0 0 15 15">
-                <path fill="currentColor"
-                  d="M14.172 0H.827A.827.827 0 0 0 0 .828v13.344c0 .458.37.828.828.828h7.184V9.19H6.057V6.925h1.955v-1.67c0-1.938 1.183-2.992 2.913-2.992.827 0 1.54.062 1.747.09v2.025h-1.197c-.94 0-1.123.447-1.123 1.102v1.445h2.243L12.3 9.19h-1.95V15h3.822c.458 0 .828-.37.828-.828V.827A.827.827 0 0 0 14.172 0z">
-                </path>
-              </svg></a>
-            <a class="footer_bottom_social pl-2" href="#"><svg role="img" aria-hidden="true" focusable="false"
-                width="24" height="24" viewBox="0 0 20 20">
-                <path fill="currentColor"
-                  d="M18.895 0H1.105C.495 0 0 .495 0 1.105V18.9c0 .605.495 1.1 1.105 1.1H18.9c.61 0 1.105-.495 1.105-1.105V1.105A1.113 1.113 0 0 0 18.895 0zM14.97 7.455c.005.11.005.22.005.33 0 3.385-2.58 7.295-7.295 7.295a7.293 7.293 0 0 1-3.925-1.145A5.142 5.142 0 0 0 7.55 12.87a2.564 2.564 0 0 1-2.395-1.78c.155.03.315.045.48.045.235 0 .46-.03.675-.09A2.57 2.57 0 0 1 4.255 8.53v-.035c.345.19.74.305 1.16.32A2.57 2.57 0 0 1 4.62 5.39a7.28 7.28 0 0 0 5.285 2.68 2.567 2.567 0 0 1 2.5-3.15c.735 0 1.4.31 1.87.81a5.1 5.1 0 0 0 1.63-.62 2.58 2.58 0 0 1-1.13 1.42c.52-.065 1.015-.2 1.475-.405-.345.515-.78.97-1.28 1.33z">
-                </path>
-              </svg></a>
-            <a class="footer_bottom_social pl-2" href="#"><svg role="img" aria-hidden="true" focusable="false"
-                width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M18.24,7.28a2.67,2.67,0,0,0-1.52-1.52,4.33,4.33,0,0,0-1.49-.27c-.84,0-1.09,0-3.23,0s-2.39,0-3.23,0a4.33,4.33,0,0,0-1.49.27A2.67,2.67,0,0,0,5.76,7.28a4.33,4.33,0,0,0-.27,1.49c0,.84,0,1.09,0,3.23s0,2.39,0,3.23a4.33,4.33,0,0,0,.27,1.49,2.67,2.67,0,0,0,1.52,1.52,4.33,4.33,0,0,0,1.49.27c.84,0,1.09,0,3.23,0s2.39,0,3.23,0a4.33,4.33,0,0,0,1.49-.27,2.67,2.67,0,0,0,1.52-1.52,4.33,4.33,0,0,0,.27-1.49c0-.84,0-1.09,0-3.23s0-2.39,0-3.23A4.33,4.33,0,0,0,18.24,7.28ZM12,16.11A4.11,4.11,0,1,1,16.11,12,4.11,4.11,0,0,1,12,16.11Zm4.27-7.42a1,1,0,1,1,1-1A1,1,0,0,1,16.27,8.69Z M12,9.33A2.67,2.67,0,1,0,14.67,12,2.68,2.68,0,0,0,12,9.33Z M22,0H2A2,2,0,0,0,0,2V22a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V2A2,2,0,0,0,22,0ZM20,15.3a5.85,5.85,0,0,1-.37,1.94,4,4,0,0,1-2.34,2.34A5.85,5.85,0,0,1,15.3,20c-.85,0-1.13.05-3.3.05S9.55,20,8.7,20a5.85,5.85,0,0,1-1.94-.37,4,4,0,0,1-2.34-2.34,5.85,5.85,0,0,1-.37-1.94c0-.85,0-1.13,0-3.3s0-2.45,0-3.3a5.85,5.85,0,0,1,.37-1.94A4,4,0,0,1,6.76,4.42,5.85,5.85,0,0,1,8.7,4.05C9.55,4,9.83,4,12,4s2.45,0,3.3,0a5.85,5.85,0,0,1,1.94.37,4,4,0,0,1,2.34,2.34A5.85,5.85,0,0,1,20,8.7c0,.85.05,1.13.05,3.3S20,14.45,20,15.3Z">
-                </path>
-              </svg></a>
-          </div>
+                <div class="d-flex flex-column flex-sm-row footer_bottom">
+                    <div class="d-flex flex-column flex-sm-row col-sm-10 pl-0">
+                        <div class="d-flex justify-content-center pb-2 pl-3 footer_bottom_contents">© 2022 Khan Academy
+                        </div>
+                        <div class="d-flex justify-content-center pb-2 footer_bottom_contents"><a
+                                class="footer_bottom_link" href="#">Terms of use</a></div>
+                        <div class="d-flex justify-content-center pb-2 footer_bottom_contents"><a
+                                class="footer_bottom_link" href="#">Privacy Policy</a></div>
+                        <div class="d-flex justify-content-center footer_bottom_contents"><a class="footer_bottom_link"
+                                href="#">Cookie Notice</a></div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center col-sm-2 pl-0 pr-0">
+                        <a class="footer_bottom_social" href="#"><svg role="img" aria-hidden="true" focusable="false"
+                                width="24" height="24" viewBox="0 0 15 15">
+                                <path fill="currentColor"
+                                    d="M14.172 0H.827A.827.827 0 0 0 0 .828v13.344c0 .458.37.828.828.828h7.184V9.19H6.057V6.925h1.955v-1.67c0-1.938 1.183-2.992 2.913-2.992.827 0 1.54.062 1.747.09v2.025h-1.197c-.94 0-1.123.447-1.123 1.102v1.445h2.243L12.3 9.19h-1.95V15h3.822c.458 0 .828-.37.828-.828V.827A.827.827 0 0 0 14.172 0z">
+                                </path>
+                            </svg></a>
+                        <a class="footer_bottom_social pl-2" href="#"><svg role="img" aria-hidden="true"
+                                focusable="false" width="24" height="24" viewBox="0 0 20 20">
+                                <path fill="currentColor"
+                                    d="M18.895 0H1.105C.495 0 0 .495 0 1.105V18.9c0 .605.495 1.1 1.105 1.1H18.9c.61 0 1.105-.495 1.105-1.105V1.105A1.113 1.113 0 0 0 18.895 0zM14.97 7.455c.005.11.005.22.005.33 0 3.385-2.58 7.295-7.295 7.295a7.293 7.293 0 0 1-3.925-1.145A5.142 5.142 0 0 0 7.55 12.87a2.564 2.564 0 0 1-2.395-1.78c.155.03.315.045.48.045.235 0 .46-.03.675-.09A2.57 2.57 0 0 1 4.255 8.53v-.035c.345.19.74.305 1.16.32A2.57 2.57 0 0 1 4.62 5.39a7.28 7.28 0 0 0 5.285 2.68 2.567 2.567 0 0 1 2.5-3.15c.735 0 1.4.31 1.87.81a5.1 5.1 0 0 0 1.63-.62 2.58 2.58 0 0 1-1.13 1.42c.52-.065 1.015-.2 1.475-.405-.345.515-.78.97-1.28 1.33z">
+                                </path>
+                            </svg></a>
+                        <a class="footer_bottom_social pl-2" href="#"><svg role="img" aria-hidden="true"
+                                focusable="false" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M18.24,7.28a2.67,2.67,0,0,0-1.52-1.52,4.33,4.33,0,0,0-1.49-.27c-.84,0-1.09,0-3.23,0s-2.39,0-3.23,0a4.33,4.33,0,0,0-1.49.27A2.67,2.67,0,0,0,5.76,7.28a4.33,4.33,0,0,0-.27,1.49c0,.84,0,1.09,0,3.23s0,2.39,0,3.23a4.33,4.33,0,0,0,.27,1.49,2.67,2.67,0,0,0,1.52,1.52,4.33,4.33,0,0,0,1.49.27c.84,0,1.09,0,3.23,0s2.39,0,3.23,0a4.33,4.33,0,0,0,1.49-.27,2.67,2.67,0,0,0,1.52-1.52,4.33,4.33,0,0,0,.27-1.49c0-.84,0-1.09,0-3.23s0-2.39,0-3.23A4.33,4.33,0,0,0,18.24,7.28ZM12,16.11A4.11,4.11,0,1,1,16.11,12,4.11,4.11,0,0,1,12,16.11Zm4.27-7.42a1,1,0,1,1,1-1A1,1,0,0,1,16.27,8.69Z M12,9.33A2.67,2.67,0,1,0,14.67,12,2.68,2.68,0,0,0,12,9.33Z M22,0H2A2,2,0,0,0,0,2V22a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V2A2,2,0,0,0,22,0ZM20,15.3a5.85,5.85,0,0,1-.37,1.94,4,4,0,0,1-2.34,2.34A5.85,5.85,0,0,1,15.3,20c-.85,0-1.13.05-3.3.05S9.55,20,8.7,20a5.85,5.85,0,0,1-1.94-.37,4,4,0,0,1-2.34-2.34,5.85,5.85,0,0,1-.37-1.94c0-.85,0-1.13,0-3.3s0-2.45,0-3.3a5.85,5.85,0,0,1,.37-1.94A4,4,0,0,1,6.76,4.42,5.85,5.85,0,0,1,8.7,4.05C9.55,4,9.83,4,12,4s2.45,0,3.3,0a5.85,5.85,0,0,1,1.94.37,4,4,0,0,1,2.34,2.34A5.85,5.85,0,0,1,20,8.7c0,.85.05,1.13.05,3.3S20,14.45,20,15.3Z">
+                                </path>
+                            </svg></a>
+                    </div>
 
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin="anonymous "></script>
 </body>
+</footer>
+</div>
 
-</html>
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+-->
+</body>
